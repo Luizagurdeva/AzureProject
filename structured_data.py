@@ -5,12 +5,14 @@ import calendar
 import requests
 import io
 
-path = "/Users/luiza/Documents/GitHub/dashlesson/data/"
+githubpath = 'https://github.com/Luizagurdeva/AzureProject/tree/main/data'
+githubpath = './data/'
+# path = "/Users/luiza/Documents/GitHub/dashlesson/data/"
 
-df_customers = pd.read_excel(path + "my_shop_data.xlsx", sheet_name="customers")
-df_order = pd.read_excel(path + "my_shop_data.xlsx", sheet_name="order")
-df_employee = pd.read_excel(path + "my_shop_data.xlsx", sheet_name="employee")
-df_products = pd.read_excel(path + "my_shop_data.xlsx", sheet_name="products")
+df_customers = pd.read_excel(githubpath + "my_shop_data.xlsx", sheet_name="customers")
+df_order = pd.read_excel(githubpath + "my_shop_data.xlsx", sheet_name="order")
+df_employee = pd.read_excel(githubpath + "my_shop_data.xlsx", sheet_name="employee")
+df_products = pd.read_excel(githubpath + "my_shop_data.xlsx", sheet_name="products")
 
 
 def get_sales_data():
